@@ -115,7 +115,7 @@ module Google
         # @raise [Google::Apis::ClientError] The request is invalid and should not be retried without modification
         # @raise [Google::Apis::AuthorizationError] Authorization is required
         def create_spreadsheet(spreadsheet_object = nil, fields: nil, quota_user: nil, options: nil, &block)
-          command = make_simple_command(:post, 'v4/spreadsheets', options)
+          command = make_simple_command(:post, 'spreadsheets', options)
           command.request_representation = Google::Apis::SheetsV4::Spreadsheet::Representation
           command.request_object = spreadsheet_object
           command.response_representation = Google::Apis::SheetsV4::Spreadsheet::Representation
